@@ -17,7 +17,7 @@ app.get("/", function (req, res) {
     respons.on("end", function (data) {
       var tree = JSON.parse(treeData).parameters.q;
       console.log(tree);
-      res.send("Server is up and running " + tree);
+      res.send("Kommunen förvaltar: " + tree);
     });
   });
 });
