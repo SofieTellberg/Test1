@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
     respons.on("end", function (data) {
       var tree = JSON.parse(treeData).parameters.q;
       console.log(tree);
-      res.send("Kommunen förvaltar: " + tree);
+      res.send("Länstyrelsen förvaltar: " + tree);
     });
   });
 });
